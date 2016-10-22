@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>wargaming.net api</title>
+      <link rel='stylesheet' href='styles/bootstrap.min.css' type='text/css' media='all'>
+      <link rel="stylesheet" href="styles/main.css">
+      <script src="js/jquery.min.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/handlebars.js"></script>
+    </head>
+    <body>
+      <div class="container">
+        <div class="row header">
+             <h1>Players</h1>  
+        </div>
+        <div class="updates">
+ 			    <script id="template" type="text/x-handlebars-template">
+						{{#each data}}
+              <div class="well row">
+                /*<div class="col-md-2">
+                    <a href="{{players.url}}" target="_blank"><img src="{{channel.logo}}" class="img-rounded logo"></a>
+                </div>
+                <div class="pre">
+                  <a href="{{channel.url}}" target="_blank">{{channel.status}}</a>
+                </div>*/
+								<div class="row">
+                  <strong>nickname: </strong> {{nickname}}<br>
+                  <strong>account id: </strong> {{account_id}}<br>
+                  <strong>clan id: </strong> {{clan_id}}<br>
+                  <strong>global rating: </strong> {{global_rating}}<br>
+                  <strong>battles: </strong> {{statistics.all.battles}}<br>
+								</div>
+						  </div>
+						{{/each}}
+          </script>
+        </div>
+      </div>
+    </body>
+</html> 
