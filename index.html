@@ -15,26 +15,21 @@
              <h1>Players</h1>  
         </div>
         <div class="updates">
+        </div>
  			    <script id="template" type="text/x-handlebars-template">
 						{{#each data}}
               <div class="well row">
-                /*<div class="col-md-2">
-                    <a href="{{players.url}}" target="_blank"><img src="{{channel.logo}}" class="img-rounded logo"></a>
-                </div>
-                <div class="pre">
-                  <a href="{{channel.url}}" target="_blank">{{channel.status}}</a>
-                </div>*/
 								<div class="row">
                   <strong>nickname: </strong> {{nickname}}<br>
-                  <strong>account id: </strong> {{account_id}}<br>
-                  <strong>clan id: </strong> {{clan_id}}<br>
                   <strong>global rating: </strong> {{global_rating}}<br>
                   <strong>battles: </strong> {{statistics.all.battles}}<br>
+                  <strong>defeat: </strong> {{statistics.all.losses}}<br>
+                  <strong>victories: </strong> {{statistics.all.wins}}<br>
 								</div>
 						  </div>
 						{{/each}}
           </script>
-        </div>
+        
       </div>
     </body>
 </html> 

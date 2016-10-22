@@ -13,5 +13,5 @@ $(document).ready(function () {
             console.log("error"); 
         }
     });
-    setInterval(location.reload, 100000);
+    setInterval("location.reload()", 100000);
 })
