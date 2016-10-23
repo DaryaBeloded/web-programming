@@ -2,7 +2,7 @@
   <html lang="en">
     <head>
       <meta charset="utf-8">
-      <title>wargaming.net api</title>
+      <title>worldoftanks api</title>
       <link rel='stylesheet' href='styles/bootstrap.min.css' type='text/css' media='all'>
       <link rel="stylesheet" href="styles/main.css">
       <script src="js/jquery.min.js"></script>
@@ -12,19 +12,19 @@
     <body>
       <div class="container">
         <div class="row header">
-             <h1>Players</h1>  
+             <h1 class="title">PERSONAL DATA OF PLAYERS</h1>  
         </div>
         <div class="updates">
         </div>
  			    <script id="template" type="text/x-handlebars-template">
 						{{#each data}}
-              <div class="well row">
+              <div class="well boxes">
 								<div class="row">
-                  <strong>nickname: </strong> {{nickname}}<br>
-                  <strong>global rating: </strong> {{global_rating}}<br>
-                  <strong>battles: </strong> {{statistics.all.battles}}<br>
-                  <strong>defeat: </strong> {{statistics.all.losses}}<br>
-                  <strong>victories: </strong> {{statistics.all.wins}}<br>
+                  <strong>nickname:   </strong> {{nickname}}<br>
+                  <strong>global rating:    </strong> {{global_rating}}<br>
+                  <strong>battles:    </strong> {{statistics.all.battles}}<br>
+                  <strong>defeat:    </strong> {{statistics.all.losses}}<br>
+                  <strong>victories:    </strong> {{statistics.all.wins}}<br>
 								</div>
 						  </div>
 						{{/each}}

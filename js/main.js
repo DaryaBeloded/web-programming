@@ -3,7 +3,7 @@
 $(document).ready(function () {
     $.ajax({ 
         type: 'GET',
-        url:'https://api.worldoftanks.ru/wot/account/info/?application_id=9984e7e11df63b8bf2f931be4078b451&account_id=291,588,782',
+        url:'https://api.worldoftanks.ru/wot/account/info/?application_id=9984e7e11df63b8bf2f931be4078b451&account_id=291,588,782,555,999',
         success:function(players) { 
             console.log(players);
             var template = Handlebars.compile( $('#template').html()  );
@@ -13,5 +13,5 @@ $(document).ready(function () {
             console.log("error"); 
         }
     });
-    setInterval("location.reload()", 100000);
+    setInterval("location.reload()", 1000000);
 })
